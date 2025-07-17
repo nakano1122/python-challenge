@@ -7,10 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: python-challenge
     volumes:
-      - ./.vscode:/app/.vscode
-      - ./src:/app/src
-      - ./data:/app/data
-      - ./docs:/app/docs
+      - ./:/app
     working_dir: /app
     environment:
       - PYTHONPATH=/app
