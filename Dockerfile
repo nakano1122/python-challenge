@@ -1,7 +1,7 @@
 FROM python:3.10-slim
 
 WORKDIR /app
-RUN apt update && apt install -y git tree wget
+RUN apt update && apt install -y make git tree wget
 RUN pip install --upgrade pip
 
 COPY ./requirements.txt .
