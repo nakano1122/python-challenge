@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  python-challenge:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: python-challenge
+    volumes:
+      - ./.vscode:/app/.vscode
+      - ./src:/app/src
+      - ./data:/app/data
+      - ./docs:/app/docs
+    working_dir: /app
+    environment:
+      - PYTHONPATH=/app
+    tty: true
+    stdin_open: true
