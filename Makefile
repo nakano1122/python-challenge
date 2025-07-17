@@ -2,22 +2,24 @@
 
 help:
 	@echo "利用可能なコマンド:"
-	@echo "  create_problem TITLE=[問題のタイトル] - 問題を作成します。"
-	@echo "  test_problem TITLE=[問題のタイトル]   - 問題のテストを実行します。"
-	@echo "  submit_problem TITLE=[問題のタイトル] - 問題を提出します。"
+	@echo "  create TITLE=[問題のタイトル] - 問題を作成します。"
+	@echo "  test TITLE=[問題のタイトル]   - 問題のテストを実行します。"
+	@echo "  submit TITLE=[問題のタイトル] - 問題を提出します。"
+	@echo "  test.all                     - すべての問題のテストを実行します。"
 
-create_problem:
-	@echo "問題「{TITLE}」を作成します。"
-	@python3
+# 作問者(Questioner) or 解答者(Answerer)
+YOUR_STATUS := questioner
 
-test_problem:
-	@echo "問題「{TITLE}」のテストを実行します。"
-	@python3
+create:
+	@mkdir -p src/problems/${TITLE}
+	@cp -r src/problems/template/* src/problems/${TITLE}/
+	@echo "	問題「${TITLE}」のディレクトリを作成しました。"
 
-test_all:
-	@echo "すべての問題のテストを実行します。"
-	@python3
+test:
+	@YOUR_STATUS=${YOUR_STATUS} python3 src/problems/${TITLE}/test/test.py
 
-submit_problem:
-	@echo "問題「{TITLE}」を提出します。"
-	@python3
+submit:
+	@YOUR_STATUS=${YOUR_STATUS} python3 src/problems/${TITLE}/test/test.py
+
+test.all:
+	@YOUR_STATUS=${YOUR_STATUS} python3 src/problems/${TITLE}/test/test.py
