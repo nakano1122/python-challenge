@@ -1,0 +1,23 @@
+[
+  {
+    "input": [
+      "abc",
+      "xy"
+    ],
+    "output": "axbyc"
+  },
+  {
+    "input": [
+      "abcde",
+      "fg"
+    ],
+    "output": "afbgcde"
+  },
+  {
+    "input": [
+      "a",
+      "bcd"
+    ],
+    "output": "abcd"
+  }
+]

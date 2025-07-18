@@ -1,0 +1,26 @@
+[
+  {
+    "input": [
+      "3"
+    ],
+    "output": "Fiz!!"
+  },
+  {
+    "input": [
+      "5"
+    ],
+    "output": "Buzz!!"
+  },
+  {
+    "input": [
+      "15"
+    ],
+    "output": "FizBuzz!!"
+  },
+  {
+    "input": [
+      "7"
+    ],
+    "output": "7"
+  }
+]

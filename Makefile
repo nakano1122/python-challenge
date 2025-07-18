@@ -16,22 +16,27 @@ create:
 	@echo "	問題「${TITLE}」のディレクトリを作成しました。"
 
 test:
-	if [ "$(YOUR_STATUS)" = "Answerer" ]; then \
+	@if [ "$(YOUR_STATUS)" = "Answerer" ]; then \
 		echo "❌ エラー: 解答者はsubmitできません。"; \
 		exit 1; \
 	fi
 	@YOUR_STATUS=${YOUR_STATUS} python3 src/problems/${TITLE}/test/test.py
 
 submit:
-	if [ -z "${TITLE}" ]; then \
+	@if [ -z "${TITLE}" ]; then \
 		echo "❌ エラー: TITLEを指定してください。"; \
 		exit 1; \
 	fi
 	@YOUR_STATUS=${YOUR_STATUS} python3 src/problems/${TITLE}/test/test.py
 
 test.all:
-	if [ "$(YOUR_STATUS)" = "Answerer" ]; then \
+	@if [ "$(YOUR_STATUS)" = "Answerer" ]; then \
 		echo "❌ エラー: 解答者はsubmitできません。"; \
 		exit 1; \
 	fi
-	@YOUR_STATUS=${YOUR_STATUS} python3 src/problems/${TITLE}/test/test.py
+	@for TITLE in `ls src/problems`; do \
+		echo "Testing $$TITLE..."; \
+		YOUR_STATUS=${YOUR_STATUS} python3 src/problems/$$TITLE/test/test.py; \
+		echo "--------------------------------"; \
+	done
+	@echo "All tests completed."
