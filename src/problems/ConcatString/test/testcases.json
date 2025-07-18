@@ -1,0 +1,23 @@
+[
+  {
+    "input": [
+      "abc",
+      "def"
+    ],
+    "output": "abcdef"
+  },
+  {
+    "input": [
+      "hello",
+      "world"
+    ],
+    "output": "helloworld"
+  },
+  {
+    "input": [
+      "foo",
+      "bar"
+    ],
+    "output": "foobar"
+  }
+]
