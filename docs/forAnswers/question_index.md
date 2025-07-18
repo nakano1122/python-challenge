@@ -1,6 +1,21 @@
 # 問題の目次
 
 ## Pythonに慣れよう
-1. HelloWorld
-2. CalcNum
-3. ConcatString
+### 1. HelloWorld
+作成済み
+
+### 2. CalcNum
+2つの数字の和、差、積、商を計算して総和を取る
+
+### 3. ConcatString
+2つの文字列を繋げる
+
+## 条件分岐、繰り返しに慣れよう
+### 4. FizBuzz
+1つの数字を与えて、それが3の倍数なら"Fiz!!"を返し、5の倍数なら"Buzz!!"を返し、その両方の倍数なら"FizBuzz!!"を返す
+
+### 5. Kaijo
+1つの自然数を与えて、それの階乗を求める
+
+### 6. AlterConcat
+2つの文字列を与えて、それを交互に繋げる
