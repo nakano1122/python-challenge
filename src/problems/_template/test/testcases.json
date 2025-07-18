@@ -1,0 +1,26 @@
+[
+  {
+    "input": {
+      "name": "input"
+    },
+    "output": {
+      "message": "output"
+    }
+  },
+  {
+    "input": {
+      "name": "input2"
+    },
+    "output": {
+      "message": "output2"
+    }
+  },
+  {
+    "input": {
+      "name": "input3"
+    },
+    "output": {
+      "message": "output3"
+    }
+  }
+]

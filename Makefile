@@ -8,7 +8,7 @@ help:
 	@echo "  test.all                     - すべての問題のテストを実行します。"
 
 # 作問者(Questioner) or 解答者(Answerer)
-YOUR_STATUS := Answerer
+YOUR_STATUS := Questioner
 
 create:
 	@mkdir -p src/problems/${TITLE}
