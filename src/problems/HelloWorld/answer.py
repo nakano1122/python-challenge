@@ -1,9 +1,9 @@
 """
 ＜問題＞
-Hello Worldを返す関数を作成してください。
+「Hello World!」を標準出力しましょう。
 """
 
 
 def main():
     """メイン処理"""
-    return {"message": "ここに解答を記述してください。"}
+    pass

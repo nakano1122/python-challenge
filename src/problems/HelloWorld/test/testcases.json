@@ -1,7 +1,6 @@
 [
   {
-    "output": {
-      "message": "Hello, World!"
-    }
+    "input": null,
+    "output": "Hello World!"
   }
 ]

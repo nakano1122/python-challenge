@@ -1,20 +1,26 @@
 [
   {
-    "input": [
-      "5"
-    ],
-    "output": "120"
+    "input": {
+      "name": "input"
+    },
+    "output": {
+      "message": "output"
+    }
   },
   {
-    "input": [
-      "1"
-    ],
-    "output": "1"
+    "input": {
+      "name": "input2"
+    },
+    "output": {
+      "message": "output2"
+    }
   },
   {
-    "input": [
-      "10"
-    ],
-    "output": "3628800"
+    "input": {
+      "name": "input3"
+    },
+    "output": {
+      "message": "output3"
+    }
   }
 ]

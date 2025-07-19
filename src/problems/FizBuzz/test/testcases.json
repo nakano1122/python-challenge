@@ -1,26 +1,26 @@
 [
   {
-    "input": [
-      "3"
-    ],
-    "output": "Fiz!!"
+    "input": {
+      "name": "input"
+    },
+    "output": {
+      "message": "output"
+    }
   },
   {
-    "input": [
-      "5"
-    ],
-    "output": "Buzz!!"
+    "input": {
+      "name": "input2"
+    },
+    "output": {
+      "message": "output2"
+    }
   },
   {
-    "input": [
-      "15"
-    ],
-    "output": "FizBuzz!!"
-  },
-  {
-    "input": [
-      "7"
-    ],
-    "output": "7"
+    "input": {
+      "name": "input3"
+    },
+    "output": {
+      "message": "output3"
+    }
   }
 ]

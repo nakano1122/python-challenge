@@ -1,23 +1,26 @@
 [
   {
-    "input": [
-      "abc",
-      "def"
-    ],
-    "output": "abcdef"
+    "input": {
+      "name": "input"
+    },
+    "output": {
+      "message": "output"
+    }
   },
   {
-    "input": [
-      "hello",
-      "world"
-    ],
-    "output": "helloworld"
+    "input": {
+      "name": "input2"
+    },
+    "output": {
+      "message": "output2"
+    }
   },
   {
-    "input": [
-      "foo",
-      "bar"
-    ],
-    "output": "foobar"
+    "input": {
+      "name": "input3"
+    },
+    "output": {
+      "message": "output3"
+    }
   }
 ]

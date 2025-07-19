@@ -22,15 +22,18 @@ def test_main():
     テスト関数
     main関数の出力が期待される形式と一致するかを確認します。
     """
-    expected_outputs = []
-    for case_file in Path(parent_dir / "test/cases").glob("*.json"):
-        with open(case_file, "r") as f:
-            case = json.load(f)
+    with open(parent_dir / "test/testcases.json", "r") as f:
+        test_cases = json.load(f)
+    
+    input_data = [case["input"] for case in test_cases]
+    expected_outputs = [case["output"] for case in test_cases]
 
-        expected_outputs.append(case["output"])
-
-    for expected_output in expected_outputs:
-        result = answer_main() if YOUR_STATUS == "ANSWERER" else solution_main()
+    for input_case, expected_output in zip(input_data, expected_outputs):
+        result = (
+            answer_main()
+            if YOUR_STATUS == "ANSWERER"
+            else solution_main()
+        )
 
         # 出力の正誤判定
         if result != expected_output:
